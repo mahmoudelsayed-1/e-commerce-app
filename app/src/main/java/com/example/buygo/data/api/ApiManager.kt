@@ -5,10 +5,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiManager {
 
-    val retrofit:Retrofit?=null
+    val retrofit: Retrofit? = null
 
-    fun getInstance():Retrofit{
-        if(retrofit==null){
+    fun getInstance(): Retrofit {
+        if (retrofit == null) {
             return Retrofit.Builder()
                 .baseUrl("https://ecommerce.routemisr.com/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -16,6 +16,7 @@ class ApiManager {
         }
         return retrofit!!
     }
+
     fun getApi(): WebService {
         return getInstance().create(WebService::class.java)
 
