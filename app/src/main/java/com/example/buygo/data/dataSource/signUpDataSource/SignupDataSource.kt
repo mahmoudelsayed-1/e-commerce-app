@@ -1,6 +1,6 @@
-package com.example.buygo.data.dataSource
+package com.example.buygo.data.dataSource.signUpDataSource
 
-import com.example.buygo.data.api.SignupResponse
+import com.example.buygo.data.api.auth.register.SignupResponse
 
 interface SignupDataSource {
 

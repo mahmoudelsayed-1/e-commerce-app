@@ -1,10 +1,10 @@
-package com.example.buygo.data.dataSource
+package com.example.buygo.data.dataSource.signUpDataSource
 
-import com.example.buygo.data.api.SignupRequest
-import com.example.buygo.data.api.SignupResponse
 import com.example.buygo.data.api.WebService
+import com.example.buygo.data.api.auth.register.SignupRequest
+import com.example.buygo.data.api.auth.register.SignupResponse
 
-class SignupOnlineDataSourceImpl(private val webService: WebService):SignupDataSource {
+class SignupOnlineDataSourceImpl(private val webService: WebService) : SignupDataSource {
     override suspend fun signUpDataSource(
         name: String?,
         email: String?,

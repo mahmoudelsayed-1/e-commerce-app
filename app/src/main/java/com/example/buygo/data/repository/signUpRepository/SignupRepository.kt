@@ -1,6 +1,6 @@
-package com.example.buygo.repository.signUpRepository
+package com.example.buygo.data.repository.signUpRepository
 
-import com.example.buygo.data.api.SignupResponse
+import com.example.buygo.data.api.auth.register.SignupResponse
 
 interface SignupRepository {
 
